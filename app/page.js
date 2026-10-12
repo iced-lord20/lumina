@@ -1,19 +1,23 @@
-import React from 'react';
-
-import Hero from '@/compnents/Hero';
-import Navbar from '@/compnents/Navbar';
-import css from '@/app/lumina.css';
-import Footer from '@/compnents/Footer';
+import React from 'react'
+import Nav from '@/compnents/Nav'
+import Hero from '@/compnents/Hero'
+import Footer from '@/compnents/Footer'
+import './App.css';
 
 const page = () => {
   return (
-    <div>
-      <Navbar/>
-       <Hero/>
-       <Footer/>
-    </div>
-   
-  )
-}
+    <div className="site-wrapper">
+      <div className="ambient ambient-one" aria-hidden="true" />
+      <div className="ambient ambient-two" aria-hidden="true" />
 
-export default page;
+      <Nav />
+      <Hero />
+      <Footer />
+
+
+  
+    </div>
+  );
+};
+
+export default page

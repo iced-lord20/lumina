@@ -1,19 +1,30 @@
+'use client';
+
 import React from 'react'
+
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-inner">
-        <p className="logo">Lumina</p>
-        <nav className="footer-links">
-          <a href="#about">Product</a>
-          <a href="#services">Templates</a>
-          <a href="#contact">Pricing</a>
-        </nav>
+    <footer className="footer section-container">
+      <a href="#home" className="brand footer-brand">
+        <span className="brand-symbol">a.</span>
+        <span className="brand-name">
+          AURA<span>STUDIO</span>
+        </span>
+      </a>
+
+      <p>Independent creative studio. London, UK.</p>
+
+      <a className="footer-top-link" href="#home">
+        Back to the beginning ↑
+      </a>
+
+      <div className="footer-bottom">
+        <span>© {new Date().getFullYear()} Aura Studio</span>
+        <span>DESIGNED WITH INTENTION.</span>
       </div>
-      <p className="copy">© 2025 Lumina. All rights reserved.</p>
     </footer>
   );
-}
+};
 
 export default Footer
